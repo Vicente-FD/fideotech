@@ -1,0 +1,82 @@
+{% extends './baseTodos.html' %}
+{% load static %}
+
+
+{% block body %}
+    <main>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/HEADER_FIDEOTECH.webp' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carrousel_fideotech.webp' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carrousel_fideotech2.webp' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+    <!----- FIN HEADER ----->
+    <!----- CARDS ----->
+    <div class="container" >
+      <h3 class="text-center mt-4">En nuestra tienda encontrarás</h3>
+      <div class="row justify-content-center">
+        <div class="card mr-1 mb-1" id="idcard" style="width: 18rem">
+          <img src="{% static 'img/rams.webp' %}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Todo para tu mascota</h5>
+          </div>
+        </div>
+    
+        <div class="card mr-1 mb-1" id="idcard"  style="width: 18rem">
+          <img src="{% static 'img/perifericos.webp'%}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Todo para tu gatuno</h5>
+          </div>
+        </div>
+    
+        <div class="card mr-1 mb-1" id="idcard" style="width: 18rem">
+          <img src="{% static 'img/asus.webp'%}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Todo para tu exótico</h5>
+          </div>
+        </div>
+    
+        <div class="card mr-1 mb-1" id="idcard" style="width: 18rem">
+          <img src="{% static 'img/razer.webp'%}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Todo para tu perruno</h5>
+          </div>
+        </div>
+    
+        <div class="card mr-1 mb-1" id="idcard" style="width: 18rem">
+          <img src="{% static 'img/viewsonic.webp'%}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Peluquería</h5>
+          </div>
+        </div>
+    
+        <div class="card mr-1 mb-1" id="idcard" style="width: 18rem">
+          <img src="{%static 'img/kingston.webp'%}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-center">Un nuevo amigo </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!----- FIN CARDS ----->
+{% endblock %}
+
+

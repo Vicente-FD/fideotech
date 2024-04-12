@@ -1,0 +1,70 @@
+{% extends './baseTodos.html' %}
+{% load static %}
+
+{% block body %}
+<!----- BODY----->
+<body>
+  <!----- TEXTO-FOTO NOSOTRAS ----->
+  <main>
+    
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/HEADER_FIDEOTECH.webp' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carrousel_fideotech.webp' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carrousel_fideotech2.webp' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+
+    <article class="container">
+      <h3 class="text-center mt-3">¿Quienes somos?</h3>
+
+      <p class="text-algin mx-5 my-3">
+        ¡FideoTech es una innovadora startup tecnológica nacida en el corazón de Santiago de Chile en 2024. Fundada por un grupo visionario de cuatro ingenieros en informática, nuestra empresa se ha dedicado a democratizar el acceso a la tecnología avanzada, sirviendo como un puente entre los últimos avances tecnológicos y aquellos entusiastas, profesionales y empresas que buscan estar a la vanguardia del mundo digital.
+
+        Desde nuestra fundación, hemos crecido no solo en tamaño sino en ambición. Con una oferta que ya supera los miles de productos, FideoTech se enorgullece de gestionar un catálogo diverso que abarca desde componentes de hardware críticos hasta los más recientes gadgets del mercado. Nuestro compromiso va más allá de ser una simple plataforma de comercio electrónico; aspiramos a ser una comunidad para los amantes de la tecnología, donde la pasión y la curiosidad por la innovación sean el núcleo de una experiencia de compra única.
+      </p>
+      <p class="text-algin mx-5 my-3">
+        Nos destacamos por nuestro compromiso incansable con la calidad y la satisfacción del cliente. Cada producto en nuestro catálogo es seleccionado y evaluado bajo estrictos estándares de calidad, asegurando que nuestros clientes reciban solo lo mejor. Pero nuestro compromiso va más allá de los productos que vendemos; estamos dedicados a ofrecer una experiencia de usuario excepcional, desde la navegación y compra en nuestra plataforma hasta el servicio postventa.
+      </p>
+      <p class="text-algin mx-5 my-3">
+        En FideoTech, nuestra misión es clara: Empoderar a individuos y organizaciones al proporcionar acceso fácil y rápido a tecnología de punta, impulsando así el avance y la innovación en cada aspecto de la vida cotidiana. Queremos que cada interacción con nuestra plataforma no solo sea una transacción, sino una oportunidad para aprender, descubrir y crecer.
+      </p>
+      <p class="text-algin mx-5 my-3">
+        Miramos hacia el futuro con la visión de convertirnos en líderes del mercado tecnológico en Latinoamérica, reconocidos por nuestra capacidad de anticipar y adaptarnos a las rápidas evoluciones del sector, manteniendo siempre nuestra esencia de cercanía con la comunidad tecnológica. En FideoTech, creemos firmemente que la tecnología es para todos, y trabajamos cada día para hacer esa visión una realidad.
+      </p>
+      <p class="text-center mx-5 my-3">
+        ¡Esperamos te guste nuestra tienda :D!
+      </p>
+      <hr class="hr" />
+    </article>
+  </main>
+  <!----- FIN TEXTO-FOTO NOSOTRAS ----->
+
+    <!-- MAPA / UBICACION DEL LOCAL -->
+    <h2 class="text-center mt-3">¿Donde nos ubicamos?</h2>
+    <div class="container mt-3"><div id="map">
+      </div>
+    </div>
+    <!-- FIN MAPA / UBICACION DEL LOCAL --> 
+</body>
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/mapa.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+{% endblock %}
